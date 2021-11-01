@@ -23,13 +23,24 @@ function deleteToDo(event){
 function paintToDo(newTodo){
     const li = document.createElement("li");
     li.id = newTodo.id; // li에 obj id를 받기.
+    const checkbox = document.createElement("input")
+    checkbox.type = "checkbox";
+    
     const span = document.createElement("span");
     const button = document.createElement("button");
 
+
+    
     button.innerText = "😇";
+    
     button.addEventListener("click", deleteToDo);
+    
+    
     li.appendChild(span); //span을 child 자식으로 상속
     li.appendChild(button); // 버튼도 상속
+    li.appendChild(checkbox);
+    
+    
 
     span.innerText = newTodo.text; //newTodo를 이제 오브젝트로 받기때문에 key값을 받기. 
     toDoList.appendChild(li);

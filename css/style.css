@@ -1,3 +1,92 @@
-.hidden{
-    display: none;
+.hidden {
+  display: none;
+}
+
+.bgImg {
+  position: fixed;
+  z-index: -1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30%;
+}
+
+.cta-button {
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  color: white;
+  background-color: tomato;
+  border: 0;
+  width: 320px;
+  height: 50px;
+}
+
+#greeting {
+  text-align: center;
+  color: white;
+}
+
+.input-field {
+  border: 0;
+  width: 312px;
+  height: 50px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+#clock {
+  text-align: center;
+  color: white;
+}
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.quote-container div:first-child {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#quote {
+  text-align: center;
+}
+
+#weather {
+  margin-top: 12px;
+  color: white;
+  text-align: center;
+}
+
+#todo-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#todo-form input:first-child {
+  width: 200px;
+  height: 30px;
+  border: 0;
+  border-radius: 6px;
+}
+
+#todo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: white;
 }
